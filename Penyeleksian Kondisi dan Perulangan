@@ -1,0 +1,36 @@
+#include <stdio.h>
+int main() 
+{
+    int nomor, integerblk = 0, integerreal, sisa;  
+    
+    printf("Periksa Bilangan Polindrom\n");
+    printf("PRAKTIKUM ALGORITMA DAN PEMROGRAMAN MODUL 2\n");
+    printf("\n");
+    printf("Input bilangan : ");
+    scanf("%i",&nomor);  
+    
+    integerreal=nomor;
+    printf("\n");
+
+    while(nomor!=0)
+    
+     {
+      sisa=nomor%10;
+      integerblk = integerblk*10 + sisa;
+      
+              nomor /= 10;
+    }
+
+    if (integerreal==integerblk)
+    {
+
+        printf("%i adalah bilangan palindrom, Terima kasih...\n", integerreal); 
+            }
+    else
+    {
+        printf("%i bukan bilangan palindrom, Terima kasih...\n", integerreal);
+        }
+
+    printf("---------------------------------------------------\n");
+    return 0;
+}
