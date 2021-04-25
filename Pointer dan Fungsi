@@ -1,0 +1,34 @@
+#include <stdio.h>
+#include <string.h>
+#include <ctype.h>
+
+
+int main(){
+    char kata[50] = {'\0'};
+    char temp[50] = {'\0'};
+    int huhu, ia, dia = 0;
+
+    printf("Program Mengecek Kata Palindrom atau Bukan\n");
+    printf("Teguh Lessmana | 2008561084");
+    printf("\nMasukkan Kata : ");
+    gets(kata);
+    huhu = strlen(kata);
+
+    for(ia = 0; kata[ia]; ia++){
+        kata[ia] = tolower(kata[ia]);
+    }
+
+    for(ia = huhu-1; ia >= 0; ia--){
+        temp[dia] = kata[ia];
+        dia++;
+    }
+
+    printf("Result : ");
+    if(strcmp(kata, temp) == 0)
+        printf("Merupakan Palindrom");
+    else
+        printf("Bukan Merupakan Palindrom");
+
+    getch();
+    return 0;
+}
