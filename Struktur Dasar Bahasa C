@@ -1,0 +1,52 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    char nama[100], kelas[10], alamat[100],nohp[20], bulan[10];
+    char nim[20];
+    int tanggal,tahun;
+    int umur;
+
+    printf("Data Mahasiswa\n");
+
+    printf("Nama : ");
+    gets(nama);
+    fflush(stdin);
+
+    printf("NIM : ");
+    scanf(" %s", &nim);
+    fflush(stdin);
+
+    printf("Kelas : ");
+    scanf("%s", &kelas);
+    fflush(stdin);
+
+    printf("Alamat : ");
+    gets(alamat);
+    fflush(stdin);
+
+    printf("No Hp : ");
+    scanf("%s", &nohp);
+    fflush(stdin);
+
+    printf("Tanggal Lahir : ");
+    scanf("%d", &tanggal);
+    scanf("%s", &bulan);
+    scanf("%d", &tahun);
+    fflush(stdin);
+    umur=2021-tahun;
+
+    printf("\n");
+    printf("Nama : %s\n", nama);
+    printf("NIM : %s\n",nim);
+    printf("Kelas : %s\n", kelas);
+    printf("Alamat : %s\n", alamat);
+    printf("No HP : %s\n", nohp);
+    printf("Tanggal lahir : %d", tanggal);
+    printf(" %s", bulan);
+    printf(" %d\n", tahun);
+    printf("Umur : %d\n", umur);
+
+    return 0;
+}
